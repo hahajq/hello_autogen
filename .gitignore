@@ -1,0 +1,23 @@
+# Miscellaneous
+*.class
+*.log
+*.lock
+*.pyc
+*.swp
+*.bkp
+*.dtmp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.idea/
+target/
+prepare.sh
+node_modules/
+*_env
+*.env
+test/
+go.sum
+.dart_tool/
+package-lock.json
