@@ -1,0 +1,3 @@
+# module level litellm settings
+litellm_settings: 
+  drop_params: True
