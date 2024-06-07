@@ -8,7 +8,11 @@
 ## run
 
 ```sh
+
 source autogen_env/bin/activate
+# windows
+cd $HOME/coding/hello-autogen/hello-autogen-python
+source autogen_env/Scripts/activate
 ```
 
 ### run with ollama llama3
@@ -24,6 +28,7 @@ ollama list
 
 ```sh
 litellm --model ollama_chat/llama3 --config litellm.yaml
+litellm --model ollama_chat/qwen2
 ```
 
 ```sh
