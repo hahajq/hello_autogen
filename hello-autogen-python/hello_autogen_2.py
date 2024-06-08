@@ -16,20 +16,20 @@ local_llm_config = {
 
 student = ConversableAgent(
     "student",
-    system_message="你是一名高中生",
+    system_message="你是一名语言学研究生",
     llm_config=local_llm_config,
     human_input_mode="NEVER",
 )
 teacher = ConversableAgent(
     "teacher",
-    system_message="你是一名数学老师",
+    system_message="你是一名语言学老师",
     llm_config=local_llm_config,
     human_input_mode="NEVER",  # Never ask for human input.
 )
 
 result = teacher.initiate_chat(
     student,
-    message="什么是三角不等式",
+    message="欧洲的书写体系有哪些",
     summary_method="reflection_with_llm",
     max_turns=4,
 )

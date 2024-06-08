@@ -22,7 +22,7 @@ user_proxy = UserProxyAgent("user_proxy",
                             max_consecutive_auto_reply=5)
 
 result = user_proxy.initiate_chat(assistant,
-                                  message="编写一个shell脚本可以查看文件夹下的文件")
+                                  message="编写一个同时支持windows和macos的shell脚本，用来查看当前文件夹下的文件及其属性")
 
 pprint.pprint(result.summary)
 pprint.pprint(result.chat_history)
