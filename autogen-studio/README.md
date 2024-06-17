@@ -17,10 +17,9 @@ which python
 ```
 
 ```sh
-pip install autogenstudio
+pip install -U autogenstudio
 ```
 
 ```sh
 autogenstudio ui --port 8080
 ```
-
