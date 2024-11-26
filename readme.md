@@ -2,20 +2,17 @@
 
 <https://microsoft.github.io/autogen/docs/tutorial/introduction>
 
-- The whole is greater than the sum of its parts.
-- -Aristotle
+> The whole is greater than the sum of its parts.
+>
+> -- Aristotle
 
 ## run
 
 ```sh
-
-source autogen_env/bin/activate
-# windows
-cd $HOME/coding/hello-autogen/hello-autogen-python
 source autogen_env/Scripts/activate
 ```
 
-### run with ollama llama3
+### 1 run with ollama llama3
 
 - <https://www.litellm.ai/>
 - <https://github.com/BerriAI/litellm>
@@ -27,15 +24,10 @@ ollama list
 ```
 
 ```sh
-litellm --model ollama_chat/llama3 --config litellm.yaml
-litellm --model ollama_chat/qwen2
-```
-
-```sh
 python hello_autogen_llama3.py
 ```
 
-### run with huggingface gemma
+### 2 run with huggingface gemma
 
 ```sh
 # https://huggingface.co/settings/tokens
@@ -47,7 +39,7 @@ litellm --model huggingface/google/gemma-2b-it
 python hello_autogen_gemma.py
 ```
 
-### run with moonshot
+### 3 run with moonshot
 
 ```sh
 # https://platform.moonshot.cn/console/api-keys

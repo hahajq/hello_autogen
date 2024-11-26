@@ -1,18 +1,14 @@
-import os
 import pprint
 from autogen import ConversableAgent
 
-local_llm_config = {
-    "config_list": [
-        {
-            "model": "NotRequired",  # Loaded with LiteLLM command
-            "api_key": "NotRequired",  # Not needed
-            "base_url": "http://localhost:4000"  # Your LiteLLM URL
-        }
-    ],
-    "cache_seed": None  # Turns off caching, useful for testing different models
-}
-
+config_list = [
+    {
+        "model": "llama3.2",
+        "base_url": "http://localhost:11434/v1",
+        "api_key": "ollama",
+    }
+]
+local_llm_config = {"config_list": config_list}
 
 student = ConversableAgent(
     "student",
