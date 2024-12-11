@@ -132,3 +132,5 @@ arithmetic_agent.register_nested_chats(
 reply = arithmetic_agent.generate_reply(
     messages=[{"role": "user", "content": "I have a number 3 and I want to turn it into 7."}]
 )
+
+
